@@ -18,7 +18,10 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem "paperclip", "~> 5.0.0"
+gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk', '~> 2.3.0'
+gem "figaro"
+
 
 group :production do
 	gem 'pg'
