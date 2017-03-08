@@ -4,7 +4,7 @@ has_attached_file :image, :styles => { :medium => "200x", :thumb => "100x100>" }
 validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/ 
 
 def s3_credentials 
-	{:bucket => "dcu-fyp", :access_key_id => "AKIAJ63BGX4NQF3WS4OA", :secret_access_key => "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"} 
+	{:bucket => "dcu-fyp", :access_key_id => ENV["ACCESS_KEY_ID"] %>, :secret_access_key => ENV["SECRET_ACCESS_KEY"]} 
 		
 	end 
 end
